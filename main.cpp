@@ -7,10 +7,11 @@
  */
 
 #include <cstdlib>
+#include <string>
 #include "Network.h"
 
 using namespace std;
-
+using std::string;
 /*
  * 
  */
@@ -22,7 +23,7 @@ int main(int argc, char** argv) {
     ImportContacts();
     //next contacts must be updated to ensure no orphans
     //exist in the network
-    
+
     
     return 0;
 }
