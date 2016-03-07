@@ -11,14 +11,14 @@
 Network::Network() {
 }
 
-void ConnectToNetwork()
+void ConnectToNetwork(void)
 {
     /*
      * TODO allow primitive to connect to the network
      */
 }
 
-void ImportContacts()
+void ImportContacts(void)
 {
     /*
      * TODO create code logic to find server or other users to build
