@@ -7,22 +7,24 @@
  */
 
 #include <string>
+#include <cstdlib>
+#include <iostream>
 #include "Network.h"
 
 
-Network::Network() {
-}
-
-void ConnectToNetwork(void)
+void ConnectToNetwork()
 {
+    //this line exist for debugging only
+    std::cout << "ConnectToNetwork";
     /*
      * TODO allow primitive to connect to the network
      */
 }
 
-void ImportContacts(void)
+void ImportContacts()
 {
-    
+    //this line exist for debugging only
+    std::cout << "ImportContacts";
     /*
      * TODO create code logic to find server or other users to build
      * a local database of random users
@@ -31,6 +33,7 @@ void ImportContacts(void)
 
 void FindPeer(std::string Peername)
 {
+    
     /*
      The string Peername will contain the UID of the peer we are looking for
      * to begin our contacts must be searched after that we need to ask the

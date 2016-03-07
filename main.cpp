@@ -15,7 +15,9 @@ using std::string;
 /*
  * 
  */
-int main(int argc, char** argv) {
+int main(void) {
+    
+    
     
     ConnectToNetwork();
     //first thing we need to do is connect to our network
