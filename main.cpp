@@ -9,6 +9,7 @@
 #include <cstdlib>
 #include <string>
 #include "Network.h"
+#include "FileSendReceive.h"
 
 using namespace std;
 using std::string;
