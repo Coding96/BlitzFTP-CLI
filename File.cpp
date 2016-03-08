@@ -12,9 +12,8 @@
  */
 
 #include "File.h"
-#include <cstdlib>
-#include <iostream>
 
+using std::string;
 
 File::File() {
     using std::cout;
@@ -27,8 +26,8 @@ File::~File() {
     cout << "File Object Deleted";
 }
 
-int SetFileData()
+int SetFileData(string PathToFile)
 {
-    std::string FileData = "";
+    string FileData = "";
     return 0;
 }

@@ -10,18 +10,22 @@
  *
  * Created on 08 March 2016, 01:49
  */
-#include <cstdlib>
+
 
 #ifndef FILE_H
 #define FILE_H
 
-using namespace std;
+#include <cstdlib>
+#include <string>
+#include <iostream>
+
+using std::string;
 
 class File {
 public:
     File();
     ~File();
-    int SetFileData();
+    int SetFileData(string PathToFile);
 private:
 
 };

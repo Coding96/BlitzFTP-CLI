@@ -6,9 +6,6 @@
  * Created on 07 March 2016, 21:49
  */
 
-#include <string>
-#include <cstdlib>
-#include <iostream>
 #include "Network.h"
 
 
