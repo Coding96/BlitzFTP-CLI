@@ -17,13 +17,17 @@ using std::string;
 
 File::File() {
     using std::cout;
-    cout << "File Object Created";
+    //-----------debugging------------------
+    cout << "\nFile Object Created\n";
+    //----------debugging-------------------
 }
 
 
 File::~File() {
     using std::cout;
-    cout << "File Object Deleted";
+    //--------debugging------------------
+    cout << "\nFile Object Deleted\n";
+    //-----------------------------------
 }
 
 int SetFileData(string PathToFile)

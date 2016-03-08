@@ -11,8 +11,9 @@
 
 void SendFile(File FileToSend)
 {
-   
-    
+    //-----Debugging----------------------
+    std::cout << "\nSending File\n";
+    //------------------------------------
 }
 
 void ReceiveFile(File FileToReceive)

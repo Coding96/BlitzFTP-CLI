@@ -12,7 +12,7 @@
 void ConnectToNetwork()
 {
     //this line exist for debugging only
-    std::cout << "ConnectToNetwork";
+    std::cout << "\nConnectToNetwork\n";
     /*
      * TODO allow primitive to connect to the network
      */
@@ -21,7 +21,7 @@ void ConnectToNetwork()
 void ImportContacts()
 {
     //this line exist for debugging only
-    std::cout << "ImportContacts";
+    std::cout << "\nImportContacts\n";
     /*
      * TODO create code logic to find server or other users to build
      * a local database of random users
