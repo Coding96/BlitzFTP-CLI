@@ -16,6 +16,9 @@
 
 using namespace std;
 
+string PathToFile;
+string FileData;
+
 File::File() {
 }
 
@@ -25,3 +28,10 @@ File::File(const File& orig) {
 File::~File() {
 }
 
+int SetFileData(string RequiredPath)
+{
+    /*
+     *in here use requiredpath to fill filedata with chars that can be 
+     * decoded the other end 
+     * /
+}

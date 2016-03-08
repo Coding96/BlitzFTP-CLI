@@ -10,6 +10,7 @@
  *
  * Created on 08 March 2016, 01:49
  */
+#include <cstdlib>
 
 #ifndef FILE_H
 #define FILE_H
@@ -25,3 +26,4 @@ private:
 
 #endif /* FILE_H */
 
+int SetFileData(std::string RequiredPath);
