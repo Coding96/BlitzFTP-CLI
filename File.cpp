@@ -13,25 +13,22 @@
 
 #include "File.h"
 #include <cstdlib>
+#include <iostream>
 
-using namespace std;
-
-string PathToFile;
-string FileData;
 
 File::File() {
+    using std::cout;
+    cout << "File Object Created";
 }
 
-File::File(const File& orig) {
-}
 
 File::~File() {
+    using std::cout;
+    cout << "File Object Deleted";
 }
 
-int SetFileData(string RequiredPath)
+int SetFileData()
 {
-    /*
-     *in here use requiredpath to fill filedata with chars that can be 
-     * decoded the other end 
-     * /
+    std::string FileData = "";
+    return 0;
 }

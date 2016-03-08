@@ -15,15 +15,19 @@
 #ifndef FILE_H
 #define FILE_H
 
+using namespace std;
+
 class File {
 public:
     File();
-    File(const File& orig);
-    virtual ~File();
+    ~File();
+    int SetFileData();
 private:
 
 };
 
+
+
 #endif /* FILE_H */
 
-int SetFileData(std::string RequiredPath);
+

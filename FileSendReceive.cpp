@@ -7,6 +7,7 @@
  */
 
 #include "FileSendReceive.h"
+#include "File.h"
 
 void SendFile(File FileToSend)
 {
