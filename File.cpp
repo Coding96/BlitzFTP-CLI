@@ -32,6 +32,7 @@ File::~File() {
 
 int SetFileData(string PathToFile)
 {
+    ifstream inputstream (PathToFile.c_str(), ifstream::in);
     string FileData = "";
     return 0;
 }

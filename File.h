@@ -15,11 +15,14 @@
 #ifndef FILE_H
 #define FILE_H
 
-#include <cstdlib>
+
 #include <string>
 #include <iostream>
+#include <fstream>
 
 using std::string;
+using std::cout;
+using std::ifstream;
 
 class File {
 public:
