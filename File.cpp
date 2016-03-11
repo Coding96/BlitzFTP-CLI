@@ -33,9 +33,12 @@ int FileData(string PathToFile)
     string FileData = "";
     
     for (int counter = 0; counter < 512; counter++)
-    {
+    {   
         FileData += inputstream.get();
     }
+    
+    if (inputstream.is_open() == true)
+        inputstream.close();
     
     return 0;
 }
