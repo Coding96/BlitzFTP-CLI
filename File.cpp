@@ -13,10 +13,8 @@
 
 #include "File.h"
 
-using std::string;
 
 File::File() {
-    using std::cout;
     //-----------debugging------------------
     cout << "\nFile Object Created\n";
     //----------debugging-------------------
@@ -24,15 +22,20 @@ File::File() {
 
 
 File::~File() {
-    using std::cout;
     //--------debugging------------------
     cout << "\nFile Object Deleted\n";
     //-----------------------------------
 }
 
-int SetFileData(string PathToFile)
+int FileData(string PathToFile)
 {
     ifstream inputstream (PathToFile.c_str(), ifstream::in);
     string FileData = "";
+    
+    for (int counter = 0; counter < 512; counter++)
+    {
+        FileData += inputstream.get();
+    }
+    
     return 0;
 }
