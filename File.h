@@ -28,7 +28,9 @@ class File {
 public:
     File();
     ~File();
-    int SetFileData(string PathToFile);
+    int SetFileData(string PathToFile, int BlockNumber);
+    string getCurrentFilePath();
+    int getCurrentBlockNumber();
 private:
 
 };

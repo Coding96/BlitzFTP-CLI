@@ -13,6 +13,8 @@
 
 #include "File.h"
 
+int CURRENT_BLOCK_NUMBER;
+string FILE_PATH;
 
 File::File() {
     //-----------debugging------------------
@@ -29,8 +31,11 @@ File::~File() {
 
 int FileData(string PathToFile, int BlockNumber)
 {
+    FILE_PATH = PathToFile;
+    
     ifstream inputstream (PathToFile.c_str(), ifstream::in);
     string FileData = "";
+    CURRENT_BLOCK_NUMBER = BlockNumber;
     
     for (int counter = BlockNumber; counter < 512 + BlockNumber; counter++)
     {   
@@ -38,15 +43,26 @@ int FileData(string PathToFile, int BlockNumber)
         {
             //read and discard all data up until the
             //correct block is reached
-            char temp = inputstream.get();
+            string temp = "";
+            getline(inputstream, temp);
         }
         
         //get 512 bytes of data to send
-        FileData += inputstream.get();
+        getline(inputstream, FileData);
     }
     
     if (inputstream.is_open() == true)
         inputstream.close();
     
     return 0;
+}
+
+int getCurrentBlockNumber()
+{
+    return CURRENT_BLOCK_NUMBER;
+}
+
+string getCurrentFilePath()
+{
+    return FILE_PATH;
 }
