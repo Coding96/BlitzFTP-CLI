@@ -27,13 +27,21 @@ File::~File() {
     //-----------------------------------
 }
 
-int FileData(string PathToFile)
+int FileData(string PathToFile, int BlockNumber)
 {
     ifstream inputstream (PathToFile.c_str(), ifstream::in);
     string FileData = "";
     
-    for (int counter = 0; counter < 512; counter++)
+    for (int counter = BlockNumber; counter < 512 + BlockNumber; counter++)
     {   
+        for(int counter = 0; counter < 512 * BlockNumber; counter++)
+        {
+            //read and discard all data up until the
+            //correct block is reached
+            char temp = inputstream.get();
+        }
+        
+        //get 512 bytes of data to send
         FileData += inputstream.get();
     }
     
