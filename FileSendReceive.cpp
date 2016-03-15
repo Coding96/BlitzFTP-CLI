@@ -11,18 +11,18 @@
 
 void SendFile(File FileToSend)
 {
-    int result = 0;
-    //int result = FileToSend->SetFileData("F:\\",0);
-    if(result =! 0)
-    {
-        "File Failure";
-    }
-    //-----Debugging----------------------
-    std::cout << "\nSending File\n";
-    //------------------------------------
+  int result = 0;
+  //int result = FileToSend.SetFileData("F:\\",0);
+  if (result = !0)
+  {
+    "File Failure";
+  }
+  //-----Debugging----------------------
+  std::cout << "\nSending File\n";
+  //------------------------------------
 }
 
 void ReceiveFile(File FileToReceive)
 {
-    
+
 }
