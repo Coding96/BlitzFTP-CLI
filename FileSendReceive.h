@@ -12,5 +12,5 @@
  */
 #include "File.h"
 
-void SendFile(File FileToSend);
-void ReceiveFile(File FileToReceive);
+void SendFile (File FileToSend);
+void ReceiveFile (File FileToReceive);

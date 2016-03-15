@@ -24,18 +24,19 @@ using std::string;
 using std::cout;
 using std::ifstream;
 
-class File {
-    int CURRENT_BLOCK_NUMBER;
-    string FILE_PATH;
+class File
+{
+  int CURRENT_BLOCK_NUMBER;
+  string FILE_PATH;
 public:
-    //constructor
-    File();
-    //destructor
-    ~File();
-    //methods
-    int SetFileData(string PathToFile, int BlockNumber);
-    string getCurrentFilePath();
-    int getCurrentBlockNumber();
+  //constructor
+  File ();
+  //destructor
+  ~File ();
+  //methods
+  int SetFileData (string PathToFile, int BlockNumber);
+  string getCurrentFilePath ();
+  int getCurrentBlockNumber ();
 private:
 
 };

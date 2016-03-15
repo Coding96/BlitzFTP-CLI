@@ -16,53 +16,54 @@
 int CURRENT_BLOCK_NUMBER = 0;
 string FILE_PATH = "";
 
-File::File() {
-    //-----------debugging------------------
-    cout << "\nFile Object Created\n";
-    //----------debugging-------------------
+File::File()
+{
+  //-----------debugging------------------
+  cout << "\nFile Object Created\n";
+  //----------debugging-------------------
 }
 
-
-File::~File() {
-    //--------debugging------------------
-    cout << "\nFile Object Deleted\n";
-    //-----------------------------------
+File::~File()
+{
+  //--------debugging------------------
+  cout << "\nFile Object Deleted\n";
+  //-----------------------------------
 }
 
 int File::SetFileData(string PathToFile, int BlockNumber)
 {
-    FILE_PATH = PathToFile;
-    
-    ifstream inputstream (PathToFile.c_str(), ifstream::in);
-    string FileData = "";
-    CURRENT_BLOCK_NUMBER = BlockNumber;
-    
-    for (int counter = BlockNumber; counter < 512 + BlockNumber; counter++)
-    {   
-        for(int counter = 0; counter < 512 * BlockNumber; counter++)
-        {
-            //read and discard all data up until the
-            //correct block is reached
-            string temp = "";
-            getline(inputstream, temp);
-        }
-        
-        //get 512 bytes of data to send
-        getline(inputstream, FileData);
+  FILE_PATH = PathToFile;
+
+  ifstream inputstream(PathToFile.c_str(), ifstream::in);
+  string FileData = "";
+  CURRENT_BLOCK_NUMBER = BlockNumber;
+
+  for (int counter = BlockNumber; counter < 512 + BlockNumber; counter++)
+  {
+    for (int counter = 0; counter < 512 * BlockNumber; counter++)
+    {
+      //read and discard all data up until the
+      //correct block is reached
+      string temp = "";
+      getline(inputstream, temp);
     }
-    
-    if (inputstream.is_open() == true)
-        inputstream.close();
-    
-    return 0;
+
+    //get 512 bytes of data to send
+    getline(inputstream, FileData);
+  }
+
+  if (inputstream.is_open() == true)
+    inputstream.close();
+
+  return 0;
 }
 
 int File::getCurrentBlockNumber()
 {
-    return CURRENT_BLOCK_NUMBER;
+  return CURRENT_BLOCK_NUMBER;
 }
 
 string File::getCurrentFilePath()
 {
-    return FILE_PATH;
+  return FILE_PATH;
 }
