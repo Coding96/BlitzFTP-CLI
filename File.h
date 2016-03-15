@@ -25,9 +25,14 @@ using std::cout;
 using std::ifstream;
 
 class File {
+    int CURRENT_BLOCK_NUMBER;
+    string FILE_PATH;
 public:
+    //constructor
     File();
+    //destructor
     ~File();
+    //methods
     int SetFileData(string PathToFile, int BlockNumber);
     string getCurrentFilePath();
     int getCurrentBlockNumber();

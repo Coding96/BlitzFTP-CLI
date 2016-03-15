@@ -29,6 +29,9 @@ int main(void) {
     //exist in the network
     File myFile;
     
+    cout << myFile.getCurrentBlockNumber();
+    
+    
     SendFile(myFile);
     //-------------------------------------------------------------
 

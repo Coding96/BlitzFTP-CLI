@@ -13,8 +13,8 @@
 
 #include "File.h"
 
-int CURRENT_BLOCK_NUMBER;
-string FILE_PATH;
+int CURRENT_BLOCK_NUMBER = 0;
+string FILE_PATH = "";
 
 File::File() {
     //-----------debugging------------------
@@ -29,7 +29,7 @@ File::~File() {
     //-----------------------------------
 }
 
-int FileData(string PathToFile, int BlockNumber)
+int File::SetFileData(string PathToFile, int BlockNumber)
 {
     FILE_PATH = PathToFile;
     
@@ -57,12 +57,12 @@ int FileData(string PathToFile, int BlockNumber)
     return 0;
 }
 
-int getCurrentBlockNumber()
+int File::getCurrentBlockNumber()
 {
     return CURRENT_BLOCK_NUMBER;
 }
 
-string getCurrentFilePath()
+string File::getCurrentFilePath()
 {
     return FILE_PATH;
 }
