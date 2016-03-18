@@ -34,8 +34,9 @@ public:
   //destructor
   ~File ();
   //methods
-  int SetFileData (string PathToFile, int BlockNumber);
+  int SetFileData (string PathToFile);
   string getCurrentFilePath ();
+  void setCurrentBlockNumber(int newBlockNumber);
   int getCurrentBlockNumber ();
 private:
 

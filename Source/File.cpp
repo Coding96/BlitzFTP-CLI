@@ -33,17 +33,19 @@ File::~File()
   //-----------------------------------
 }
 
-int File::SetFileData(string PathToFile, int BlockNumber)
+int File::SetFileData(string PathToFile)
 {
   FILE_PATH = PathToFile;
+  //current block number needs to be set
+  //using the method set block number
 
   ifstream inputstream(PathToFile.c_str(), ifstream::in);
   string FileData = "";
-  CURRENT_BLOCK_NUMBER = BlockNumber;
 
-  for (int counter = BlockNumber; counter < 512 + BlockNumber; counter++)
+  for (int counter = CURRENT_BLOCK_NUMBER; counter < 512 + CURRENT_BLOCK_NUMBER;
+          counter++)
   {
-    for (int counter = 0; counter < 512 * BlockNumber; counter++)
+    for (int counter = 0; counter < 512 * CURRENT_BLOCK_NUMBER; counter++)
     {
       //read and discard all data up until the
       //correct block is reached
@@ -59,6 +61,11 @@ int File::SetFileData(string PathToFile, int BlockNumber)
     inputstream.close();
 
   return 0;
+}
+
+void File::setCurrentBlockNumber(int newBlockNumber)
+{
+    CURRENT_BLOCK_NUMBER = newBlockNumber;
 }
 
 int File::getCurrentBlockNumber()
