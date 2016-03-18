@@ -10,8 +10,6 @@
 #include "FileSendReceive.h"
 #include "File.h"
 
-using namespace std;
-using std::string;
 
 /*
  * 
@@ -36,7 +34,6 @@ int main(void)
 
   SendFile(myFile);
   //-------------------------------------------------------------
-
 
   return 0;
 }

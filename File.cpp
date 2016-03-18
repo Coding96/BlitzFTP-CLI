@@ -13,11 +13,14 @@
 
 #include "File.h"
 
-int CURRENT_BLOCK_NUMBER = 0;
-string FILE_PATH = "";
+int CURRENT_BLOCK_NUMBER;
+string FILE_PATH;
 
 File::File()
 {
+  //initilize variables on construction
+  CURRENT_BLOCK_NUMBER = 0;
+  FILE_PATH = "";
   //-----------debugging------------------
   cout << "\nFile Object Created\n";
   //----------debugging-------------------
