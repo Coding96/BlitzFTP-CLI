@@ -6,9 +6,9 @@
  * Created on 07 March 2016, 21:42
  */
 
-#include "Network.h"
-#include "FileSendReceive.h"
-#include "File.h"
+#include "../Header/Network.h"
+#include "../Header/FileSendReceive.h"
+#include "../Header/File.h"
 
 
 /*

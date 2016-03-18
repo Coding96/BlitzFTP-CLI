@@ -6,7 +6,7 @@
  * Created on 07 March 2016, 21:49
  */
 
-#include "Network.h"
+#include "../Header/Network.h"
 
 void ConnectToNetwork()
 {

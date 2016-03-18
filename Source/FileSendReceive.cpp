@@ -6,8 +6,8 @@
  * Created on 08 March 2016, 01:37
  */
 
-#include "FileSendReceive.h"
-#include "File.h"
+#include "../Header/FileSendReceive.h"
+#include "../Header/File.h"
 
 void SendFile(File FileToSend)
 {
