@@ -18,8 +18,13 @@ first attempt at a full mesh network ftp file sharing program another version wi
 -----BEGIN PGP SIGNATURE-----
 Version: BCPG v1.47
 
-iIIEARECAEMFAlbiGG48HENvZGluZzk2IChTaWduIG9ubHkga2V5KSA8Q29kaW5n
-OTZAdXNlci5ub3JlcGx5LmdpdGh1Yi5jb20+AAoJEM1vgQIkdpaZqX4AoPJEaPI1
-lG8MySJwOUUsf5MMdunkAJdTIVSFCitkuDStDQ8Gzsm1/VEw
-=DTuh
+iQFKBAEBAgA0BQJW64lLLRxDb2Rpbmc5NiA8Q29kaW5nOTZAdXNlcnMubm9yZXBs
+eS5naXRodWIuY29tPgAKCRB4esiwy+lBtQgmCACuFZJK1ox/aCY6ZdMjgNAHvhOv
+muwuAI+DYxWIwCdixWRX+rGCSy9w3xECTnWvcmi3erMi3XCqTWBVR/2+lY5PDqiW
+vkwP0WsTdxMdm2/5ZmUQya27LMKFNoiVtrpqzBy4nLhVEIq4q00K+1iDPZoIVIqc
+8T5OvCHzn+zHCh4kpEE4jItslJwPlYZjbRNkmnM7x6I5bylqWB/maq1lcSQOpnUv
+MWm8g9srifagbHeD4NYQG0wRo9Y3sKkQcJtpeoq4oFhcnMfOstFHsTyEKlNK4r/I
+AB+CG9XIylDlZmx3nGwWQlG6CVYgIHGUp9aZmcTluExl3kHPBsY8z72LoTqt
+=2Hdk
 -----END PGP SIGNATURE-----
+
