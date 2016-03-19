@@ -19,6 +19,28 @@ void ConnectToNetwork()
 
 void ImportContacts()
 {
+  
+  ifstream hostreader("./Hosts.txt", ifstream::in);
+  
+  if (hostreader.good())
+  {
+    //this means file exists
+    //and needs to be read
+  }
+  else
+  {
+    //file does not exist and 
+    //should be created
+    ofstream hostwriter("./Hosts.txt",ifstream::out);
+    hostwriter << "To be filled with hosts";
+    
+    if (hostwriter.is_open())
+    hostwriter.close;
+  }
+  
+  if (hostreader.is_open())
+    hostreader.close();
+  
   //this line exist for debugging only
   std::cout << "\nImportContacts\n";
   /*
