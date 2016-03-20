@@ -28,8 +28,8 @@ int main(void)
   //next contacts must be updated to ensure no orphans
   //exist in the network
   File myFile;
-
-  cout << myFile.getCurrentBlockNumber();
+  
+  cout << "\n" << myFile.getCurrentBlockNumber() << "\n";
 
 
   SendFile(myFile);
@@ -37,4 +37,3 @@ int main(void)
 
   return 0;
 }
-

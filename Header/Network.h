@@ -4,6 +4,9 @@
 
 using std::ifstream;
 using std::ofstream;
+using std::cout;
+using std::string;
+
 
 void ImportContacts ();
 void ConnectToNetwork ();
