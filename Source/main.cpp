@@ -34,9 +34,16 @@ int main(void)
   {
       cout << "\n0: quit\n"
             << "\n1: send File\n"
-             << "\n2: refresh Hosts\n";
+             << "\n2: refresh Hosts\n"
+              << "\n-------------------\n"
+                << "Choice(0-2):";
              
     cin >> menuchoice;
+    
+    if (menuchoice == "2")
+    {
+        RefreshHosts();
+    }
   }
 
   File myFile;

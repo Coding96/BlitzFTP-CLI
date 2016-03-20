@@ -99,3 +99,21 @@ void FindPeer(string Peername) {
     
 }
 
+void RefreshHosts()
+{
+    cout << "\nRefreshing Hosts file...\n";
+    
+    std::remove("./Hosts.txt");
+    
+    ofstream hostwriter("./Hosts.txt", ofstream::out);
+        
+    //write out the number of hosts
+    hostwriter << "0";
+        
+    hostwriter << "\nHosts that have been refreshed";
+
+    if (hostwriter.is_open()) {
+        hostwriter.close();
+    }
+    
+}
