@@ -18,7 +18,7 @@ void SendFile(File FileToSend)
     "File Failure";
   }
   //-----Debugging----------------------
-  std::cout << "\nSending File\n";
+  cout << "\nSending File\n";
   //------------------------------------
 }
 

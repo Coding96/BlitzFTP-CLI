@@ -13,7 +13,7 @@
 void ConnectToNetwork() {
     
     //this line exist for debugging only
-    std::cout << "\nConnectToNetwork\n";
+    cout << "\nConnectToNetwork\n";
     /*
      * TODO allow primitive to connect to the network
      */
@@ -52,7 +52,7 @@ void ConnectToNetwork() {
 void ImportContacts() {
 
     //this line exist for debugging only
-    std::cout << "\nImportContacts\n";
+    cout << "\nImportContacts\n";
     /*
      * TODO create code logic to find server or other users to build
      * a local database of random users
@@ -66,6 +66,9 @@ void FindPeer(std::string Peername) {
      * to begin our contacts must be searched after that we need to ask the
      * network or server if they can find this user
      */
+    
+    //firstly we want to see if we already have the person
+    //we are looking for in our hosts file
     
     ifstream hostreader("./Hosts.txt", ifstream::in);
     
@@ -90,5 +93,9 @@ void FindPeer(std::string Peername) {
     if (hostreader.is_open()) {
         hostreader.close();
     }
+    
+    //if we dont we need to ask others on the network
+    
+    
 }
 
