@@ -102,7 +102,7 @@ void RefreshHosts()
 {
     cout << "\n->Refreshing Hosts file...\n";
     
-    std::remove("./Hosts.txt");
+    remove("./Hosts.txt");
     
     ofstream hostwriter("./Hosts.txt", ofstream::out);
         

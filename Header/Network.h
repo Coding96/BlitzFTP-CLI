@@ -8,6 +8,7 @@ using std::ofstream;
 using std::cout;
 using std::cin;
 using std::string;
+using std::remove;
 
 
 void ImportContacts ();
