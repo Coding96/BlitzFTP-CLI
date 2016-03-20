@@ -27,11 +27,22 @@ int main(void)
   ImportContacts();
   //next contacts must be updated to ensure no orphans
   //exist in the network
+    
+  string menuchoice;
+  
+  while(menuchoice != "0")
+  {
+      cout << "\n0: quit\n"
+            << "\n1: send File\n"
+             << "\n2: refresh Hosts\n";
+             
+    cin >> menuchoice;
+  }
+
   File myFile;
   
   cout << "\n" << myFile.getCurrentBlockNumber() << "\n";
-
-
+  
   SendFile(myFile);
   //-------------------------------------------------------------
 

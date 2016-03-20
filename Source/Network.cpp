@@ -6,7 +6,7 @@
  * Created on 07 March 2016, 21:49
  */
 
-#include <stdlib.h>
+
 
 #include "../Header/Network.h"
 
@@ -59,7 +59,7 @@ void ImportContacts() {
      */
 }
 
-void FindPeer(std::string Peername) {
+void FindPeer(string Peername) {
 
     /*
      The string Peername will contain the UID of the peer we are looking for
