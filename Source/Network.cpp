@@ -18,18 +18,17 @@ void ConnectToNetwork() {
      * TODO allow primitive to connect to the network
      */
     
-    
     ifstream hostreader("./Hosts.txt", ifstream::in);
 
     if (hostreader.good()) {
-        cout << "\nHost file found\n";
+        cout << "->Host file found\n";
         //this means file exists
         //and needs to be read
     } else {
         //file does not exist and 
         //should be created
 
-        cout << "\nNo Host file found creating one\n";
+        cout << "->No Host file found creating one\n";
 
         ofstream hostwriter("./Hosts.txt", ofstream::out);
         
@@ -52,7 +51,7 @@ void ConnectToNetwork() {
 void ImportContacts() {
 
     //this line exist for debugging only
-    cout << "\nImportContacts\n";
+    cout << "\nImportContacts \n";
     /*
      * TODO create code logic to find server or other users to build
      * a local database of random users
@@ -101,7 +100,7 @@ void FindPeer(string Peername) {
 
 void RefreshHosts()
 {
-    cout << "\nRefreshing Hosts file...\n";
+    cout << "\n->Refreshing Hosts file...\n";
     
     std::remove("./Hosts.txt");
     
@@ -110,7 +109,7 @@ void RefreshHosts()
     //write out the number of hosts
     hostwriter << "0";
         
-    hostwriter << "\nHosts that have been refreshed";
+    hostwriter << "\nHosts that have been refreshed\n";
 
     if (hostwriter.is_open()) {
         hostwriter.close();

@@ -32,13 +32,17 @@ int main(void)
   
   while(menuchoice != "0")
   {
-      cout << "\n0: quit\n"
+      cout << "\n-------------------\n";
+      
+      cout << "0: quit\n"
             << "\n1: send File\n"
-             << "\n2: refresh Hosts\n"
+             << "\n2: refresh Hosts"
               << "\n-------------------\n"
                 << "Choice(0-2):";
              
     cin >> menuchoice;
+    
+    cout << "-------------------\n";
     
     if (menuchoice == "2")
     {
