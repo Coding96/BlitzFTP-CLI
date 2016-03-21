@@ -56,6 +56,28 @@ void ImportContacts() {
      * TODO create code logic to find server or other users to build
      * a local database of random users
      */
+    ifstream friendReader("Friends.txt", ifstream::in);
+   
+    
+    if (friendReader.good())
+    {
+        cout << "->Friend List found\n";
+    }
+    else
+    {
+         ofstream friendWriter("Friends.txt", ofstream::out);
+        friendWriter << "0";
+        cout << "->Friend List initialised\n";
+        
+        if (friendWriter.is_open()) {
+        friendWriter.close();
+        }
+    }
+    
+    if (friendReader.is_open()) {
+        friendReader.close();
+        }
+     
 }
 
 void FindPeer(string Peername) {
@@ -104,10 +126,12 @@ void RefreshHosts()
     
     remove("./Hosts.txt");
     
+    int numOfHosts = 0;
+    
     ofstream hostwriter("./Hosts.txt", ofstream::out);
         
     //write out the number of hosts
-    hostwriter << "0";
+    hostwriter << numOfHosts;
         
     hostwriter << "\nHosts that have been refreshed\n";
 
