@@ -10,6 +10,7 @@
 
 #include "../Header/Network.h"
 #include "../Header/KeyManagement.h"
+#include "Poco/Net/HTTPRequest.h"
 
 void ConnectToNetwork()
 {
